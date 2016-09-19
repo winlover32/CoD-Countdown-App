@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/my_drawable">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:focusable="false"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtListTitle"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:typeface="normal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:maxLines="3"/>
+
+        <TextView
+            android:id="@+id/txtListDate"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtListTitle"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="4dp"
+            android:textSize="9sp"
+            android:maxLines="1"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txtSite"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtListDate"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="4dp"
+            android:textSize="9sp"
+            android:text="CharlieIntel.com"
+            android:maxLines="1"
+            android:paddingTop="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
